@@ -423,4 +423,12 @@ h3 {
     font-size: 0.8rem;
     margin-left: -5rem;
   }
+
+  .princi-strong {
+    font-size: 1.3rem;
+  }
+}
+
+.more-text {
+  display: none;
 }

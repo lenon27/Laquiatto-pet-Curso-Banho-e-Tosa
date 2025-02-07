@@ -45,18 +45,19 @@
 
             <h1 class="texto-banho">Curso Banho e Tosa</h1>
 
-            <p class="texto-primario"><strong class="princi-strong">Objeções do Banho & Tosa</strong>
+            <p id="text"><strong class="princi-strong">Objeções do Banho & Tosa</strong><span id="more" class="more-content">
                 Muitas pessoas enfrentam desafios ao considerar uma carreira relacionada ao cuidado
-                de animais, como
-                banho e tosa. Entre os principais obstáculos está o medo de não ter afinidade com os animais. Isso é
+                de animais, como banho e tosa. Entre os principais obstáculos está o medo de não ter afinidade com os animais. Isso é
                 compreensível, especialmente quando se lida com cães, que podem ser agressivos ou ansiosos durante o
                 processo. A insegurança em estabelecer uma conexão com eles pode ser um fator determinante, já que
                 quando falamos sobre animais, é muito importante transmitir segurança, considerando que a comunicação
                 entre diferentes espécies (cães e humanos) é baseada na projeção de intenções.
+
                 Outro aspecto que gera preocupação é o risco de acidentes. Trabalhar com animais envolve a possibilidade
                 de mordidas, arranhões e até lesões mais graves, com técnicas adequadas, atenção e segurança podem
                 diminuir significativamente esses riscos.
-                Além disso, a falta de conhecimento ou habilidade pode ser uma barreira significativa. Algumas pessoas
+
+              Além disso, a falta de conhecimento ou habilidade pode ser uma barreira significativa. Algumas pessoas
                 podem questionar sua própria capacidade de aprender as técnicas necessárias ou de desempenhar o trabalho
                 com eficiência. É verdade que o aprendizado pode ser um processo demorado e, muitas vezes, exige
                 paciência e perseverança. No entanto, os benefícios a longo prazo são inegáveis. Com o tempo, a
@@ -66,12 +67,14 @@
                 diminuir ou que novas tecnologias venham a substituir o trabalho humano. O mercado pet no Brasil é um
                 dos maiores do mundo, impulsionado pela humanização dos animais de estimação e pela crescente demanda
                 por produtos e serviços de qualidade, garantindo oportunidades para os novos formados.
-                Embora esses medos e objeções sejam comuns, é importante lembrar que podem ser superados com a prática,
+
+               Embora esses medos e objeções sejam comuns, é importante lembrar que podem ser superados com a prática,
                 aprendizado e dedicação. Encontrar uma verdadeira paixão por trabalhar com animais e investir em
                 qualificação na área, pode fazer toda a diferença.
                 Quanto ao curso, ele pode ser dividido em até 12 vezes sem juros no cartão de crédito, ou, se optar pelo
-                pagamento via pix, há um desconto de 5%.
+                pagamento via pix, há um desconto de 5%.</span> <a href="#" id="readMoreLink">Ler Mais...</a><br>
             </p>
+            <br>
             <a href="https://wa.me/5511953469691"><button>Entre em Contato</button></a>
         </div>
 
@@ -342,7 +345,22 @@
 
 
 </body>
-<script src="./scriptis.js"></script>
+<script>
+    
+    document.getElementById('readMoreLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    var moreText = document.getElementById('more');
+    var linkText = document.getElementById('readMoreLink');
+
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'inline';
+        linkText.textContent = 'Ler Menos';
+    } else {
+        moreText.style.display = 'none';
+        linkText.textContent = 'Ler Mais';
+    }
+});
+</script>
 
 </html>
 

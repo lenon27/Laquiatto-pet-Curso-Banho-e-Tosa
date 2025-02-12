@@ -10,6 +10,9 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.desativado {
+  cursor: no-drop;
+}
 
 .header {
   display: flex;
@@ -34,11 +37,6 @@ body {
 .header a:hover {
   color: rgb(255, 204, 0);
 }
-
-.desativado {
-  cursor: not-allowed;
-}
-
 
 .caixa-mae {
   display: flex;
@@ -65,12 +63,36 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 20px 0;
+
+}
+
+.hidden {
+  display: none;
+  letter-spacing: 0.08em;
 }
 
 
-.princi-strong {
-  font-size: 1.5rem;
+
+.intro-text {
+  font-size: 1.2em;
 }
+
+
+
+
+#toggleButton {
+
+  color: rgba(66, 0, 135, 1);
+
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#toggleButton:hover {
+  background-color: #ffffff46;
+}
+
+
 
 button {
   background-color: rgba(66, 0, 135, 1);
@@ -90,7 +112,6 @@ button:hover {
   transition: 0.9s ease-in-out;
 
 }
-
 
 .video-container {
   width: 100%;
@@ -342,7 +363,6 @@ h3 {
       0px 0px 40px rgb(86, 125, 243),
       0px 0px 60px rgb(255, 204, 0);
   }
-
 }
 
 @media (max-width: 480px) {
@@ -427,8 +447,4 @@ h3 {
   .princi-strong {
     font-size: 1.3rem;
   }
-}
-
-.more-text {
-  display: none;
 }
